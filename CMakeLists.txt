@@ -72,7 +72,8 @@ if(ENABLE_INSTALL)
 
    install(TARGETS cturtle fmt
            EXPORT cturtle-targets
-           LIBRARY
+           ARCHIVE DESTINATION lib
+           LIBRARY DESTINATION lib
            PUBLIC_HEADER
               DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}
               COMPONENT Headers
